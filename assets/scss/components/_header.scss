@@ -2,7 +2,6 @@
 .header {
     width: 100%;
     background-color: var(--body-color);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -56,6 +55,25 @@
 }
 
 /* show Menu */
-.show-menu{
+.show-menu {
     top: calc(var(--header-height) + 1rem);
+}
+
+/*Active Link*/
+.active-link {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        width: 100%;
+        height: .1rem;
+        background-color: var(--first-color);
+    }
+}
+
+/*Change Scroll header*/
+.scroll-header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }

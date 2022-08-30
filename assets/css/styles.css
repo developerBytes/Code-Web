@@ -45,7 +45,7 @@ img {
   --header-height: 3rem;
   /* Colors */
   --first-color: hsl(177, 98%, 60%);
-  --first-color-light: hsl(177, 98%, 85%);
+  --first-color-light: hsl(177deg 92% 5% / 30%);
   --first-color-lighten: hsl(177, 98%, 80%);
   --first-color-alt: hsl(177, 98%, 45%);
   --title-color: hsl(177, 4%, 15%);
@@ -120,6 +120,26 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/* Variable dark theme */
+body.dark-theme {
+  --first-color-lighten: hsl(177, 98%, 75%);
+  --title-color: hsl(177, 4%, 95%);
+  --text-color: hsl(177, 4%, 80%);
+  --body-color: hsl(177, 8%, 13%);
+  --container-color: hsl(177, 8%, 16%);
+  --scroll-bar-color: hsl(177, 4%, 32%);
+  --scroll-thumb-color: hsl(177, 4%, 24%);
+}
+
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .about__container {

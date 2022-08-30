@@ -241,7 +241,7 @@ img {
   text-align: center;
 }
 .services__img {
-  /* width: 135px; */
+  width: 250px;
   height: 135px;
   justify-self: center;
   margin-bottom: var(--mb-0-5);

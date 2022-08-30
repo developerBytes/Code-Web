@@ -14,13 +14,26 @@
     &__header {
         display: none;
     }
-    &-link{
+
+    &-link {
         background: none;
         padding: 0;
         color: var(--title-color);
 
-        &:hover{
+        &:hover {
             background-color: transparent;
+            color: var(--first-color);
         }
+    }
+
+    &-flex {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        padding: .75rem 1rem;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
     }
 }

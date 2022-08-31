@@ -51,3 +51,8 @@
         --smaller-font-size: .813rem;
     }
 }
+
+::selection {
+    background-color: var(--first-color);
+    color: var(--container-color);
+}
